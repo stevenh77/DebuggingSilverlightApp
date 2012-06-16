@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="DebuggingSilverlightApp.MainPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid x:Name="LayoutRoot" Margin="20">
+        <StackPanel Width="300" VerticalAlignment="Stretch">
+            <TextBlock FontSize="22" Text="Debugging Silverlight Apps" />
+            <Button x:Name="btnHangTime"
+                    Height="50"
+                    Margin="10"
+                    Click="btnHangTime_Click"
+                    Content="Hang time" />
+            <Button x:Name="btnMemoryLeak"
+                    Height="50"
+                    Margin="10"
+                    Click="btnMemoryLeak_Click"
+                    Content="Memory Leak (remove then add Test View)" />
+            <StackPanel x:Name="ViewContainer" VerticalAlignment="Stretch" />
+            <TextBlock x:Name="CounterTextBlock"
+                       HorizontalAlignment="Center"
+                       FontSize="22"
+                       Text="0" />
+        </StackPanel>
+    </Grid>
+</UserControl>
